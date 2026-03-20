@@ -1,0 +1,512 @@
+{
+  "database": "chatbot_completo.db",
+  "tables": {
+    "alimentos": [
+      {
+        "id": 1,
+        "nombre": "manzana",
+        "porcion": "100g",
+        "calorias": 52.0,
+        "proteinas": 0.3,
+        "carbohidratos": 14.0,
+        "grasas": 0.2,
+        "fibra": 2.4,
+        "categoria": "frutas"
+      },
+      {
+        "id": 2,
+        "nombre": "plátano",
+        "porcion": "100g",
+        "calorias": 89.0,
+        "proteinas": 1.1,
+        "carbohidratos": 23.0,
+        "grasas": 0.3,
+        "fibra": 2.6,
+        "categoria": "frutas"
+      },
+      {
+        "id": 3,
+        "nombre": "naranja",
+        "porcion": "100g",
+        "calorias": 47.0,
+        "proteinas": 0.9,
+        "carbohidratos": 12.0,
+        "grasas": 0.1,
+        "fibra": 2.4,
+        "categoria": "frutas"
+      },
+      {
+        "id": 4,
+        "nombre": "fresa",
+        "porcion": "100g",
+        "calorias": 32.0,
+        "proteinas": 0.8,
+        "carbohidratos": 8.0,
+        "grasas": 0.3,
+        "fibra": 2.0,
+        "categoria": "frutas"
+      },
+      {
+        "id": 5,
+        "nombre": "mango",
+        "porcion": "100g",
+        "calorias": 60.0,
+        "proteinas": 0.8,
+        "carbohidratos": 15.0,
+        "grasas": 0.4,
+        "fibra": 1.6,
+        "categoria": "frutas"
+      },
+      {
+        "id": 6,
+        "nombre": "piña",
+        "porcion": "100g",
+        "calorias": 50.0,
+        "proteinas": 0.5,
+        "carbohidratos": 13.0,
+        "grasas": 0.1,
+        "fibra": 1.4,
+        "categoria": "frutas"
+      },
+      {
+        "id": 7,
+        "nombre": "uva",
+        "porcion": "100g",
+        "calorias": 67.0,
+        "proteinas": 0.6,
+        "carbohidratos": 17.0,
+        "grasas": 0.2,
+        "fibra": 0.9,
+        "categoria": "frutas"
+      },
+      {
+        "id": 8,
+        "nombre": "pera",
+        "porcion": "100g",
+        "calorias": 57.0,
+        "proteinas": 0.4,
+        "carbohidratos": 15.0,
+        "grasas": 0.1,
+        "fibra": 3.1,
+        "categoria": "frutas"
+      },
+      {
+        "id": 9,
+        "nombre": "brócoli",
+        "porcion": "100g",
+        "calorias": 34.0,
+        "proteinas": 2.8,
+        "carbohidratos": 7.0,
+        "grasas": 0.4,
+        "fibra": 2.4,
+        "categoria": "verduras"
+      },
+      {
+        "id": 10,
+        "nombre": "zanahoria",
+        "porcion": "100g",
+        "calorias": 41.0,
+        "proteinas": 0.9,
+        "carbohidratos": 10.0,
+        "grasas": 0.2,
+        "fibra": 2.8,
+        "categoria": "verduras"
+      },
+      {
+        "id": 11,
+        "nombre": "lechuga",
+        "porcion": "100g",
+        "calorias": 15.0,
+        "proteinas": 1.2,
+        "carbohidratos": 3.0,
+        "grasas": 0.2,
+        "fibra": 1.3,
+        "categoria": "verduras"
+      },
+      {
+        "id": 12,
+        "nombre": "tomate",
+        "porcion": "100g",
+        "calorias": 18.0,
+        "proteinas": 0.9,
+        "carbohidratos": 4.0,
+        "grasas": 0.2,
+        "fibra": 1.2,
+        "categoria": "verduras"
+      },
+      {
+        "id": 13,
+        "nombre": "espinaca",
+        "porcion": "100g",
+        "calorias": 23.0,
+        "proteinas": 2.7,
+        "carbohidratos": 4.0,
+        "grasas": 0.4,
+        "fibra": 2.2,
+        "categoria": "verduras"
+      },
+      {
+        "id": 14,
+        "nombre": "cebolla",
+        "porcion": "100g",
+        "calorias": 40.0,
+        "proteinas": 1.1,
+        "carbohidratos": 9.0,
+        "grasas": 0.1,
+        "fibra": 1.7,
+        "categoria": "verduras"
+      },
+      {
+        "id": 15,
+        "nombre": "pepino",
+        "porcion": "100g",
+        "calorias": 16.0,
+        "proteinas": 0.7,
+        "carbohidratos": 4.0,
+        "grasas": 0.1,
+        "fibra": 0.5,
+        "categoria": "verduras"
+      },
+      {
+        "id": 16,
+        "nombre": "calabacín",
+        "porcion": "100g",
+        "calorias": 21.0,
+        "proteinas": 1.5,
+        "carbohidratos": 4.0,
+        "grasas": 0.4,
+        "fibra": 1.0,
+        "categoria": "verduras"
+      },
+      {
+        "id": 17,
+        "nombre": "pollo (pechuga)",
+        "porcion": "100g",
+        "calorias": 165.0,
+        "proteinas": 31.0,
+        "carbohidratos": 0.0,
+        "grasas": 3.6,
+        "fibra": 0.0,
+        "categoria": "proteinas"
+      },
+      {
+        "id": 18,
+        "nombre": "huevo",
+        "porcion": "1 unidad",
+        "calorias": 155.0,
+        "proteinas": 13.0,
+        "carbohidratos": 1.1,
+        "grasas": 11.0,
+        "fibra": 0.0,
+        "categoria": "proteinas"
+      },
+      {
+        "id": 19,
+        "nombre": "salmón",
+        "porcion": "100g",
+        "calorias": 208.0,
+        "proteinas": 20.0,
+        "carbohidratos": 0.0,
+        "grasas": 13.0,
+        "fibra": 0.0,
+        "categoria": "proteinas"
+      },
+      {
+        "id": 20,
+        "nombre": "atún",
+        "porcion": "100g",
+        "calorias": 144.0,
+        "proteinas": 30.0,
+        "carbohidratos": 0.0,
+        "grasas": 1.3,
+        "fibra": 0.0,
+        "categoria": "proteinas"
+      },
+      {
+        "id": 21,
+        "nombre": "carne molida",
+        "porcion": "100g",
+        "calorias": 250.0,
+        "proteinas": 17.0,
+        "carbohidratos": 0.0,
+        "grasas": 20.0,
+        "fibra": 0.0,
+        "categoria": "proteinas"
+      },
+      {
+        "id": 22,
+        "nombre": "pechuga de pavo",
+        "porcion": "100g",
+        "calorias": 135.0,
+        "proteinas": 24.0,
+        "carbohidratos": 0.0,
+        "grasas": 3.0,
+        "fibra": 0.0,
+        "categoria": "proteinas"
+      },
+      {
+        "id": 23,
+        "nombre": "jamón",
+        "porcion": "30g",
+        "calorias": 43.0,
+        "proteinas": 7.0,
+        "carbohidratos": 1.0,
+        "grasas": 1.5,
+        "fibra": 0.0,
+        "categoria": "proteinas"
+      },
+      {
+        "id": 24,
+        "nombre": "arroz blanco cocido",
+        "porcion": "100g",
+        "calorias": 130.0,
+        "proteinas": 2.7,
+        "carbohidratos": 28.0,
+        "grasas": 0.3,
+        "fibra": 0.4,
+        "categoria": "granos"
+      },
+      {
+        "id": 25,
+        "nombre": "pan integral",
+        "porcion": "30g",
+        "calorias": 80.0,
+        "proteinas": 4.0,
+        "carbohidratos": 14.0,
+        "grasas": 1.0,
+        "fibra": 2.7,
+        "categoria": "granos"
+      },
+      {
+        "id": 26,
+        "nombre": "avena",
+        "porcion": "100g",
+        "calorias": 389.0,
+        "proteinas": 17.0,
+        "carbohidratos": 66.0,
+        "grasas": 7.0,
+        "fibra": 10.6,
+        "categoria": "granos"
+      },
+      {
+        "id": 27,
+        "nombre": "pasta cocida",
+        "porcion": "100g",
+        "calorias": 131.0,
+        "proteinas": 5.0,
+        "carbohidratos": 25.0,
+        "grasas": 1.1,
+        "fibra": 1.8,
+        "categoria": "granos"
+      },
+      {
+        "id": 28,
+        "nombre": "harina de trigo",
+        "porcion": "100g",
+        "calorias": 364.0,
+        "proteinas": 10.0,
+        "carbohidratos": 76.0,
+        "grasas": 1.0,
+        "fibra": 2.7,
+        "categoria": "granos"
+      },
+      {
+        "id": 29,
+        "nombre": "leche desnatada",
+        "porcion": "100ml",
+        "calorias": 35.0,
+        "proteinas": 3.6,
+        "carbohidratos": 5.0,
+        "grasas": 0.1,
+        "fibra": 0.0,
+        "categoria": "lacteos"
+      },
+      {
+        "id": 30,
+        "nombre": "yogur natural",
+        "porcion": "100g",
+        "calorias": 61.0,
+        "proteinas": 3.5,
+        "carbohidratos": 5.0,
+        "grasas": 0.4,
+        "fibra": 0.0,
+        "categoria": "lacteos"
+      },
+      {
+        "id": 31,
+        "nombre": "queso cheddar",
+        "porcion": "30g",
+        "calorias": 120.0,
+        "proteinas": 7.0,
+        "carbohidratos": 0.4,
+        "grasas": 10.0,
+        "fibra": 0.0,
+        "categoria": "lacteos"
+      },
+      {
+        "id": 32,
+        "nombre": "mozzarella",
+        "porcion": "30g",
+        "calorias": 80.0,
+        "proteinas": 6.0,
+        "carbohidratos": 1.0,
+        "grasas": 6.0,
+        "fibra": 0.0,
+        "categoria": "lacteos"
+      },
+      {
+        "id": 33,
+        "nombre": "aguacate",
+        "porcion": "100g",
+        "calorias": 160.0,
+        "proteinas": 2.0,
+        "carbohidratos": 9.0,
+        "grasas": 15.0,
+        "fibra": 7.0,
+        "categoria": "grasas"
+      },
+      {
+        "id": 34,
+        "nombre": "almendras",
+        "porcion": "30g",
+        "calorias": 164.0,
+        "proteinas": 6.0,
+        "carbohidratos": 6.0,
+        "grasas": 14.0,
+        "fibra": 3.5,
+        "categoria": "grasas"
+      },
+      {
+        "id": 35,
+        "nombre": "aceite de oliva",
+        "porcion": "15ml",
+        "calorias": 119.0,
+        "proteinas": 0.0,
+        "carbohidratos": 0.0,
+        "grasas": 13.5,
+        "fibra": 0.0,
+        "categoria": "grasas"
+      },
+      {
+        "id": 36,
+        "nombre": "nueces",
+        "porcion": "30g",
+        "calorias": 196.0,
+        "proteinas": 4.3,
+        "carbohidratos": 4.0,
+        "grasas": 20.0,
+        "fibra": 3.8,
+        "categoria": "grasas"
+      },
+      {
+        "id": 37,
+        "nombre": "cacahuetes",
+        "porcion": "30g",
+        "calorias": 161.0,
+        "proteinas": 7.0,
+        "carbohidratos": 5.0,
+        "grasas": 14.0,
+        "fibra": 2.5,
+        "categoria": "grasas"
+      }
+    ],
+    "respuestas": [
+      {
+        "id": 1,
+        "palabras_clave": "hola",
+        "respuesta": "¡Hola! Soy Zen, tu asistente nutricional 🥗",
+        "categoria": "saludos"
+      },
+      {
+        "id": 2,
+        "palabras_clave": "hola",
+        "respuesta": "¡Hola! Puedo ayudarte con nutrición o responder preguntas generales",
+        "categoria": "saludos"
+      },
+      {
+        "id": 3,
+        "palabras_clave": "hola",
+        "respuesta": "Hola! ¿En qué puedo ayudarte hoy? 😊",
+        "categoria": "saludos"
+      },
+      {
+        "id": 4,
+        "palabras_clave": "hola",
+        "respuesta": "¡Hola de nuevo! ¿Qué necesitas?",
+        "categoria": "saludos"
+      },
+      {
+        "id": 5,
+        "palabras_clave": "buenos dias",
+        "respuesta": "Buenos días! Espero tengas un día saludable 💪",
+        "categoria": "saludos"
+      },
+      {
+        "id": 6,
+        "palabras_clave": "buenas noches",
+        "respuesta": "Buenas noches! Que descanses",
+        "categoria": "saludos"
+      },
+      {
+        "id": 7,
+        "palabras_clave": "nombre",
+        "respuesta": "Soy Zen, tu chatbot asistente de nutrición e información general!",
+        "categoria": "info"
+      },
+      {
+        "id": 8,
+        "palabras_clave": "quien eres",
+        "respuesta": "¡Soy Zen! Puedo hablar de nutrición, alimentos y mucho más",
+        "categoria": "info"
+      },
+      {
+        "id": 9,
+        "palabras_clave": "ayuda",
+        "respuesta": "Puedo ayudarte con:\n  1) Nutrición de alimentos\n  2) Preguntas generales\n  3) Información sobre calorías, proteínas, etc.",
+        "categoria": "ayuda"
+      },
+      {
+        "id": 10,
+        "palabras_clave": "que puedes hacer",
+        "respuesta": "Puedo decirte la nutrición de alimentos, la hora, la fecha, y responder preguntas variadas!",
+        "categoria": "ayuda"
+      },
+      {
+        "id": 11,
+        "palabras_clave": "hora",
+        "respuesta": "ESPECIAL_HORA",
+        "categoria": "especial"
+      },
+      {
+        "id": 12,
+        "palabras_clave": "fecha",
+        "respuesta": "ESPECIAL_FECHA",
+        "categoria": "especial"
+      },
+      {
+        "id": 13,
+        "palabras_clave": "adios",
+        "respuesta": "¡Adiós! Que disfrutes comiendo saludable 🍎",
+        "categoria": "despedidas"
+      },
+      {
+        "id": 14,
+        "palabras_clave": "adios",
+        "respuesta": "Hasta luego! Espero haberte ayudado 💪",
+        "categoria": "despedidas"
+      },
+      {
+        "id": 15,
+        "palabras_clave": "hasta luego",
+        "respuesta": "¡Hasta pronto! Recuerda comer bien 🥗",
+        "categoria": "despedidas"
+      },
+      {
+        "id": 16,
+        "palabras_clave": "chao",
+        "respuesta": "Chao! Nos vemos pronto!",
+        "categoria": "despedidas"
+      }
+    ]
+  }
+}
