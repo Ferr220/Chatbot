@@ -1,23 +1,24 @@
-# Chatbot
+# Chatbot (ZenBot)
 
-Chatbot de consola hecho en Python que responde a mensajes simples usando reglas basadas en palabras clave.
+Chatbot de consola en Python que responde con reglas basadas en palabras clave.
 
 ## Caracteristicas
 
-- Saluda al usuario con respuestas aleatorias.
-- Dice su nombre cuando se le pregunta.
-- Indica su funcion principal.
-- Muestra la hora actual del sistema.
-- Responde a solicitudes de ayuda.
-- Finaliza la conversacion cuando escribes `salir`.
+- Saludos con respuestas aleatorias.
+- Responde preguntas sobre su nombre y funcion.
+- Informa la hora actual y la fecha actual del sistema.
+- Conversacion basica sobre estado de animo (bien/mal).
+- Cuenta chistes.
+- Muestra ayuda con ejemplos de lo que puede hacer.
+- Finaliza la conversacion al escribir `salir`, `exit` o `quit`.
 
 ## Requisitos
 
-- Python 3
+- Python 3.8 o superior
 
 ## Ejecutar el proyecto
 
-Desde la carpeta del proyecto, ejecuta:
+Desde la carpeta del proyecto:
 
 ```bash
 python chatbot.py
@@ -25,25 +26,28 @@ python chatbot.py
 
 ## Ejemplos de mensajes
 
-Puedes escribir mensajes como:
+Puedes probar con mensajes como:
 
 - `hola`
 - `como te llamas`
-- `cual es tu funcion`
+- `que puedes hacer`
 - `que hora es`
+- `que dia es hoy`
+- `como estas`
+- `estoy bien`
+- `estoy mal`
+- `cuentame un chiste`
 - `ayuda`
 - `adios`
 - `salir`
 
-## Funcionamiento
+## Como funciona
 
-El chatbot analiza el texto ingresado por el usuario, lo convierte a minusculas y busca ciertas palabras clave para decidir que responder.
+1. El bot convierte tu mensaje a minusculas.
+2. Busca coincidencias de palabras clave por categoria (saludo, hora, fecha, etc.).
+3. Devuelve una respuesta fija o aleatoria segun la intencion detectada.
 
-Si no reconoce el mensaje, responde:
-
-```text
-No entendí tu mensaje.
-```
+Si no reconoce el mensaje, responde con una frase de fallback y sugiere usar `ayuda`.
 
 ## Estructura del proyecto
 
