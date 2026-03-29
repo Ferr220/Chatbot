@@ -1,9 +1,8 @@
 import random
 from datetime import datetime
 
-
 # ---------------------------------------------------------------------------
-# Keyword groups – add any word here and ZenBot will detect it in a sentence
+# Keyword groups and responses
 # ---------------------------------------------------------------------------
 KEYWORDS = {
     "saludo":    ["hola", "buenas", "hey", "ey", "qué tal", "que tal", "saludos", "buen dia", "buen día"],
@@ -112,18 +111,10 @@ while True:
     mensaje_usuario = input("  Tú: ")
 
     if mensaje_usuario.strip().lower() in ("salir", "exit", "quit"):
-        print(f"\n{BORDER}")
-        print(box_line())
-        print(box_line("    ZenBot: ¡Hasta luego! Que tengas un excelente día."))
-        print(box_line())
-        print(BORDER)
+        print("\n  ZenBot: ¡Hasta luego! Que tengas un excelente día.")
         break
 
     respuesta = responder(mensaje_usuario)
 
-    print(BORDER)
-    print(box_line())
-    print(box_line(f"    ZenBot: {respuesta}"))
-    print(box_line())
-    print(BORDER)
+    print(f"  ZenBot: {respuesta}")
     print()
