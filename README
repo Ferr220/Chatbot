@@ -1,1 +1,58 @@
-esto es una pruieba
+# Chatbot
+
+Chatbot de consola hecho en Python que responde a mensajes simples usando reglas basadas en palabras clave.
+
+## Caracteristicas
+
+- Saluda al usuario con respuestas aleatorias.
+- Dice su nombre cuando se le pregunta.
+- Indica su funcion principal.
+- Muestra la hora actual del sistema.
+- Responde a solicitudes de ayuda.
+- Finaliza la conversacion cuando escribes `salir`.
+
+## Requisitos
+
+- Python 3
+
+## Ejecutar el proyecto
+
+Desde la carpeta del proyecto, ejecuta:
+
+```bash
+python chatbot.py
+```
+
+## Ejemplos de mensajes
+
+Puedes escribir mensajes como:
+
+- `hola`
+- `como te llamas`
+- `cual es tu funcion`
+- `que hora es`
+- `ayuda`
+- `adios`
+- `salir`
+
+## Funcionamiento
+
+El chatbot analiza el texto ingresado por el usuario, lo convierte a minusculas y busca ciertas palabras clave para decidir que responder.
+
+Si no reconoce el mensaje, responde:
+
+```text
+No entendí tu mensaje.
+```
+
+## Estructura del proyecto
+
+```text
+Chatbot/
+|-- chatbot.py
+|-- README
+```
+
+## Autor
+
+Proyecto creado por Ferr220.
