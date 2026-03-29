@@ -9,10 +9,10 @@ def responder(mensaje):
         return random.choice(saludos)
 
     elif "nombre" in mensaje:
-        return "Mi nombre es PyBot."
+        return "Mi nombre es ZenBot."
 
-    elif "como estas" in mensaje:
-        return "Estoy muy bien y listo para ayudarte."
+    elif "cual es tu funcion" in mensaje:
+        return "Estoy diseñado para ayudarte con tus preguntas y tareas."
 
     elif "hora" in mensaje:
         hora_actual = datetime.now().strftime("%H:%M:%S")
@@ -27,7 +27,7 @@ def responder(mensaje):
     else:
         return "No entendí tu mensaje."
 
-print("Bot: Hola, soy PyBot. Escribe 'salir' para terminar.")
+print("Bot: Hola, soy ZenBot. Escribe 'salir' para terminar.")
 
 while True:
     mensaje_usuario = input("Tú: ")
