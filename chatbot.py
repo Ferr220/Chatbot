@@ -1,29 +1,18 @@
 import random
+import json
 from datetime import datetime
+from pathlib import Path
 
 # ---------------------------------------------------------------------------
 # Keyword groups and responses
 # ---------------------------------------------------------------------------
-KEYWORDS = {
-    "saludo":    ["hola", "buenas", "hey", "ey", "qué tal", "que tal", "saludos", "buen dia", "buen día"],
-    "nombre":    ["nombre", "llamas", "eres", "quien eres", "quién eres"],
-    "funcion":   ["funcion", "función", "sirves", "haces", "capaz", "puedes hacer"],
-    "hora":      ["hora", "tiempo", "qué hora", "que hora"],
-    "fecha":     ["fecha", "dia de hoy", "día de hoy", "hoy es", "qué dia", "que dia", "qué día", "que día"],
-    "estado":    ["como estas", "cómo estás", "como te encuentras", "como te va", "todo bien"],
-    "bien":      ["bien", "genial", "excelente", "perfecto", "de maravilla"],
-    "mal":       ["mal", "triste", "cansado", "aburrido", "deprimido"],
-    "chiste":    ["chiste", "broma", "gracioso", "hazme reir", "algo divertido"],
-    "ayuda":     ["ayuda", "ayudar", "puedes ayudar", "opciones", "que puedo preguntarte"],
-    "adios":     ["adios", "adiós", "chao", "hasta luego", "nos vemos", "bye"],
-}
+DATA_PATH = Path(__file__).with_name("chatbot_data.json")
 
-CHISTES = [
-    "¿Qué le dijo el cero al ocho? — Bonito cinturón.",
-    "¿Por qué los pájaros vuelan al sur? — Porque caminar sería muy largo.",
-    "¿Qué hace una abeja en el gimnasio? — ¡Zum-ba!",
-    "¿Cómo se llama el campeón de buceo japonés? — Tokofondo.",
-]
+with DATA_PATH.open("r", encoding="utf-8") as f:
+    data = json.load(f)
+
+KEYWORDS = data["keywords"]
+CHISTES = data["chistes"]
 
 
 def detectar(msg, grupo):
