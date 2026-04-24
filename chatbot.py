@@ -15,6 +15,25 @@ KEYWORDS = data["keywords"]
 CHISTES = data["chistes"]
 
 
+def formatear_fecha_espanol(fecha):
+    dias = [
+        "lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"
+    ]
+    meses = [
+        "enero", "febrero", "marzo", "abril", "mayo", "junio",
+        "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+    ]
+    return f"{dias[fecha.weekday()]} {fecha.day:02d} de {meses[fecha.month - 1]} de {fecha.year}"
+
+
+def formatear_hora_12h(fecha):
+    hora_12 = fecha.hour % 12
+    if hora_12 == 0:
+        hora_12 = 12
+    periodo = "a. m." if fecha.hour < 12 else "p. m."
+    return f"{hora_12}:{fecha.minute:02d}:{fecha.second:02d} {periodo}"
+
+
 def detectar(msg, grupo):
     return any(kw in msg for kw in KEYWORDS[grupo])
 
@@ -40,10 +59,10 @@ def responder(mensaje):
         return random.choice(["Lo siento, espero que te animes pronto.", "Ánimo, aquí estoy si necesitas charlar."])
 
     if detectar(msg, "hora"):
-        return f"Son las {datetime.now().strftime('%H:%M:%S')}."
+        return f"Son las {formatear_hora_12h(datetime.now())}."
 
     if detectar(msg, "fecha"):
-        return f"Hoy es {datetime.now().strftime('%A %d de %B de %Y')}."
+        return f"Hoy es {formatear_fecha_espanol(datetime.now())}."
 
     if detectar(msg, "nombre"):
         return "Mi nombre es ZenBot, tu asistente virtual."
@@ -83,7 +102,7 @@ print(box_line())
 print(box_line())
 print(box_line("                         ¡BIENVENIDO A ZENBOT!"))
 print(box_line())
-print(box_line(f"             Fecha y hora: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"))
+print(box_line(f"             Fecha y hora: {datetime.now().strftime('%Y-%m-%d')} {formatear_hora_12h(datetime.now())}"))
 print(box_line())
 print(box_line())
 print(box_line("    Escribe 'ayuda' para ver qué puedo hacer."))
